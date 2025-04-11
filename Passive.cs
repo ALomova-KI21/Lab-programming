@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1
+namespace Lab2
 {
     public class Passive : Income
     {
         protected string payer;
         protected string period;
+        public string Payer { get => payer; set => payer = value; }
+        public string Period { get => period; set => period = value; }
 
         public override void Read(string s)
         {
@@ -23,7 +25,6 @@ namespace Lab1
         public override void Revenue()
         {
             Console.WriteLine("Доход на " + date + " источник: " + source + " сумма дохода: " + amounte + " плательщик: " + payer + " период выплат: " + period);
-            //return $"date: {date}, source: {source}, amounte: {amounte}, payer: {payer}, period: {period}";
         }
     }
 }

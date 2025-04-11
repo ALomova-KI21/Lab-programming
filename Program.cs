@@ -1,39 +1,20 @@
 ﻿using System;
-using Lab1;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-public class WorkWithFile
+namespace Lab2
 {
-    static void Main()
+    internal static class Program
     {
-        Active someActive = new Active();
 
-        Passive somePassive = new Passive();
-
-        Income income = new Income();
-
-        List<Income> finances = new List<Income>();
-
-
-        StreamReader file = new StreamReader("/Users/Александра/Documents/Учёба/Технологии и методы программирования/test.txt");
-        while (!file.EndOfStream)  
+        [STAThread]
+        static void Main()
         {
-            string s = file.ReadLine();
-
-            if (s.Split()[0] == "Активный:")
-            {
-                someActive.Read(s);
-                someActive.Revenue();
-                finances.Add(someActive);
-            }
-
-            if (s.Split()[0] == "Пассивный:")
-            {
-                somePassive.Read(s);
-                somePassive.Revenue();
-                finances.Add(somePassive);
-            }
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
-        file.Close();
     }
 }
