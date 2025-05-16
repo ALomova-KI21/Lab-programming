@@ -1,4 +1,4 @@
-﻿namespace Lab2
+﻿namespace Lab4
 {
     partial class Form1
     {
@@ -39,6 +39,8 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdateFile = new System.Windows.Forms.Button();
+            this.buttonCommandFile = new System.Windows.Forms.Button();
+            this.buttonOpenFile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +118,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(90, 202);
+            this.buttonAdd.Location = new System.Drawing.Point(36, 202);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(137, 63);
             this.buttonAdd.TabIndex = 1;
@@ -126,7 +128,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(255, 202);
+            this.buttonDelete.Location = new System.Drawing.Point(188, 202);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(130, 63);
             this.buttonDelete.TabIndex = 2;
@@ -136,7 +138,7 @@
             // 
             // buttonUpdateFile
             // 
-            this.buttonUpdateFile.Location = new System.Drawing.Point(834, 202);
+            this.buttonUpdateFile.Location = new System.Drawing.Point(324, 202);
             this.buttonUpdateFile.Name = "buttonUpdateFile";
             this.buttonUpdateFile.Size = new System.Drawing.Size(130, 63);
             this.buttonUpdateFile.TabIndex = 3;
@@ -144,11 +146,33 @@
             this.buttonUpdateFile.UseVisualStyleBackColor = true;
             this.buttonUpdateFile.Click += new System.EventHandler(this.buttonUpdateFile_Click);
             // 
+            // buttonCommandFile
+            // 
+            this.buttonCommandFile.Location = new System.Drawing.Point(834, 202);
+            this.buttonCommandFile.Name = "buttonCommandFile";
+            this.buttonCommandFile.Size = new System.Drawing.Size(130, 63);
+            this.buttonCommandFile.TabIndex = 4;
+            this.buttonCommandFile.Text = "Файл команд";
+            this.buttonCommandFile.UseVisualStyleBackColor = true;
+            this.buttonCommandFile.Click += new System.EventHandler(this.buttonCommandFile_Click);
+            // 
+            // buttonOpenFile
+            // 
+            this.buttonOpenFile.Location = new System.Drawing.Point(581, 202);
+            this.buttonOpenFile.Name = "buttonOpenFile";
+            this.buttonOpenFile.Size = new System.Drawing.Size(129, 63);
+            this.buttonOpenFile.TabIndex = 5;
+            this.buttonOpenFile.Text = "Открыть файл";
+            this.buttonOpenFile.UseVisualStyleBackColor = true;
+            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 289);
+            this.Controls.Add(this.buttonOpenFile);
+            this.Controls.Add(this.buttonCommandFile);
             this.Controls.Add(this.buttonUpdateFile);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonAdd);
@@ -174,6 +198,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPayer;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPeriod;
         private System.Windows.Forms.Button buttonUpdateFile;
+        private System.Windows.Forms.Button buttonCommandFile;
+        private System.Windows.Forms.Button buttonOpenFile;
     }
 }
 

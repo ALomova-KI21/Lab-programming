@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lab2;
+using Lab4;
 
-namespace Lab2
+namespace Lab4
 {
     public class Active : Income
     {
